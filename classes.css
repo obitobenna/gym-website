@@ -1,0 +1,285 @@
+.classes-banner {
+    background: url('banner.jpg') no-repeat center center/cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+}
+
+.classes-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: -1;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2; /* Ensures text appears above the overlay */
+}
+
+
+.classes-banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.classes-banner p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #C3073F;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #6F2232;
+}
+
+@media (max-width: 768px) {
+    .classes-banner h1 {
+        font-size: 2rem;
+    }
+
+    .classes-banner p {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        padding: 10px 20px;
+    }
+}
+.classes-container1 {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.classes-container1 h2 {
+    color: #C3073F;
+    margin-bottom: 30px;
+}
+
+.class-item {
+    margin-bottom: 20px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.class-item img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.class-item h3 {
+    color: #C3073F;
+}
+
+.class-item p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.btn {
+    background-color: #C3073F;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #6F2232;
+}
+
+@media (max-width: 768px) {
+    .class-item img {
+        float: none;
+        display: block;
+        margin: auto;
+    }
+
+    .class-item {
+        text-align: center;
+    }
+}
+.trainers-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.trainers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.trainer-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.trainer-card:hover {
+    transform: translateY(-5px);
+}
+
+.trainer-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.trainer-info {
+    padding: 20px;
+}
+
+.trainer-info h3 {
+    color: #C3073F;
+    margin: 10px 0;
+}
+
+.trainer-info p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #C3073F;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #6F2232;
+}
+.class-schedule {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.class-schedule h3 {
+    text-align: center;
+    color: #C3073F;
+    margin-bottom: 20px;
+}
+
+.class-schedule table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.class-schedule th, .class-schedule td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.class-schedule th {
+    background-color: #C3073F;
+    color: white;
+    border-radius: 4px;
+}
+
+.class-schedule tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.class-schedule tr:hover {
+    background-color: #ddd;
+}
+
+@media (max-width: 768px) {
+    .class-schedule table, .class-schedule th, .class-schedule td {
+        display: block;
+    }
+
+    .class-schedule th, .class-schedule td {
+        text-align: center;
+    }
+
+    .class-schedule td {
+        padding: 10px 0;
+    }
+
+    .class-schedule td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        color: #C3073F;
+    }
+}
+.cta {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.btn-primary {
+    background-color: #C3073F;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border-radius: 50px; /* Rounded edges */
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+    display: inline-block;
+    transform: scale(1); /* Default scale */
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #6F2232;
+    color: #ffffff;
+    transform: scale(1.05); /* Slightly larger on hover/focus */
+    box-shadow: 0 6px 8px rgba(0,0,0,0.3); /* Enhanced shadow on hover/focus */
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 6px 8px rgba(0,0,0,0.3);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    animation: pulse 1.5s infinite;
+}

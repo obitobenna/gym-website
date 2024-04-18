@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="membership.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Gym Dog</a>
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="burger">
+            <i class="fas fa-bars"></i> <!-- Updated to use Font Awesome icon -->
+        </div>
+    </header>
+    <section class="membership-banner">
+        <div class="container">
+            <h1>Become a Member Today</h1>
+            <p>Join our community and take the first step towards a healthier lifestyle.</p>
+        </div>
+    </section>
+    <section class="membership-welcome">
+        <div class="membership-welcome-content">
+            <h1>Welcome to Gym Name Membership</h1>
+            <p>Join our community and start your transformation journey today. Experience state-of-the-art facilities, personalized training programs, and a supportive fitness community.</p>
+            <a href="#membership-plans" class="btn btn-primary">Explore Membership Plans</a>
+        </div>
+        <div class="membership-welcome-image">
+            <img src="gym tour.jpg" alt="Gym Tour" />
+        </div>
+    </section>
+
+    <div id="membershipCustomization" class="customization-container">
+    <h2 class="customization-title">Customize Your Membership Plan</h2>
+    <div class="customization-option">
+        <label for="workoutTime">Preferred Workout Time:</label>
+        <select id="workoutTime" class="custom-select">
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+        </select>
+    </div>
+    <div class="customization-option">
+        <label for="preferredClasses">Preferred Classes:</label>
+        <select id="preferredClasses" class="custom-select">
+            <option value="yoga">Yoga</option>
+            <option value="cardio">Cardio</option>
+            <option value="strength">Strength Training</option>
+            <option value="mixed">Mixed</option>
+        </select>
+    </div>
+    <div class="customization-option">
+        <label for="fitnessGoals">Fitness Goals:</label>
+        <select id="fitnessGoals" class="custom-select">
+            <option value="lose_weight">Lose Weight</option>
+            <option value="build_muscle">Build Muscle</option>
+            <option value="improve_flexibility">Improve Flexibility</option>
+            <option value="general_fitness">General Fitness</option>
+        </select>
+    </div>
+    <button class="btn-customize" onclick="customizeMembership()">See My Plan</button>
+    <div id="customizedPlan" class="customized-plan"></div>
+</div>
+
+<div id="vrTourContainer" class="vr-tour-container">
+    <div id="vrTour" class="vr-tour"></div>
+    <button class="vr-tour-button" onclick="startVrTour()">Explore Our Gym</button>
+</div>
+
+<section id="memberAchievements" class="member-achievements-section">
+    <h2 class="section-title">Member Achievements</h2>
+    <div id="achievementsContainer" class="achievements-container">
+        <!-- Achievements will be inserted here by JavaScript -->
+    </div>
+</section>
+<section id="gamification" class="gamification-section">
+    <h2 class="section-title">Member Challenges & Rewards</h2>
+    
+    <div id="badgesContainer" class="badges-container">
+        <h3>Your Badges</h3>
+        <!-- Badges will be dynamically inserted here -->
+    </div>
+    
+    <div id="pointsContainer" class="points-container">
+        <h3>Your Points: <span id="memberPoints">0</span></h3>
+    </div>
+    
+    <div id="leaderboardContainer" class="leaderboard-container">
+        <h3>Leaderboard</h3>
+        <ul id="leaderboardList">
+            <!-- Leaderboard entries will be dynamically inserted here -->
+        </ul>
+    </div>
+</section>
+
+<section id="memberOnlyContent" class="member-only-section">
+    <h2 class="section-title">Exclusive Member Content</h2>
+    <div class="content-teaser">
+        <p>Join our community to gain exclusive access to personalized workout plans, nutritional guides, and expert-led webinars designed to help you achieve your fitness goals.</p>
+        <a href="signup.html" class="btn btn-primary">Become a Member</a>
+    </div>
+    <div class="member-content" style="display:none;">
+        <h3>Featured Content</h3>
+        <!-- Dynamically loaded member content goes here -->
+    </div>
+</section>
+<section id="classAvailability" class="class-availability-section">
+    <h2 class="section-title">Real-Time Class Availability</h2>
+    <div class="classes-container">
+        <!-- Example class availability -->
+        <div class="class-item" data-class-id="yoga101">
+            <h3>Yoga Basics</h3>
+            <p>Monday, 7:00 AM - 8:00 AM</p>
+            <p>Status: <span class="availability">Checking...</span></p>
+        </div>
+        <div class="class-item" data-class-id="cardio202">
+            <h3>Cardio Blast</h3>
+            <p>Monday, 9:00 AM - 10:00 AM</p>
+            <p>Status: <span class="availability">Checking...</span></p>
+        </div>
+        <!-- Add more classes as needed -->
+    </div>
+</section>
+<section id="communityChallenges" class="community-challenges-section">
+    <h2 class="section-title">Community Challenges</h2>
+    <div class="challenges-container">
+        <div class="challenge-item">
+            <h3>30-Day Yoga Journey</h3>
+            <p>Embrace mindfulness and flexibility with a daily yoga practice. Open to all levels.</p>
+            <button class="btn-signup" onclick="signUpForChallenge('30-Day Yoga Journey')">Sign Up</button>
+        </div>
+        <div class="challenge-item">
+            <h3>100 Miles Running Challenge</h3>
+            <p>Challenge yourself to run or walk 100 miles in a month. Track your progress and reach new heights.</p>
+            <button class="btn-signup" onclick="signUpForChallenge('100 Miles Running Challenge')">Sign Up</button>
+        </div>
+        <!-- Add more challenges as needed -->
+    </div>
+</section>
+
+<section id="membershipPerks" class="membership-perks-section">
+    <h2 class="section-title">Membership Perks Program</h2>
+    <div class="perks-container">
+        <div class="perk-item">
+            <img src="health food store.jpg" alt="Health Food Store" class="perk-logo">
+            <h3>10% off at Health Food Store</h3>
+            <p>Enjoy a 10% discount on all products at Health Food Store with your gym membership.</p>
+        </div>
+        <div class="perk-item">
+            <img src="sports equipment shop.jpg" alt="Sports Equipment Shop" class="perk-logo">
+            <h3>15% off at Sports Equipment Shop</h3>
+            <p>Get a 15% discount on select items at Sports Equipment Shop, exclusive to our members.</p>
+        </div>
+        <!-- Add more perks as needed -->
+    </div>
+</section>
+<section id="feedbackSection" class="feedback-section">
+    <h2 class="section-title">Feedback & Suggestions</h2>
+    <p>We value your input! Help us improve by sharing your ideas for new classes, equipment, or any other improvements.</p>
+    <form id="feedbackForm" class="feedback-form">
+        <div class="form-group">
+            <label for="suggestionType">Suggestion Type:</label>
+            <select id="suggestionType" name="suggestionType" required>
+                <option value="">Select Type</option>
+                <option value="class">Class</option>
+                <option value="equipment">Equipment</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="suggestion">Your Suggestion:</label>
+            <textarea id="suggestion" name="suggestion" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Submit Suggestion</button>
+    </form>
+</section>
+<section id="liveFeed" class="live-feed-section">
+    <h2 class="section-title">Our Community in Action</h2>
+    <div id="socialWall" class="social-wall">
+        <!-- Dynamic posts will be loaded here -->
+        <p class="placeholder-text">Check back soon to see posts from our members!</p>
+    </div>
+</section>
+<div id="chatbotContainer" class="chatbot-container">
+    <div id="chatbotIcon" class="chatbot-icon" onclick="toggleChatWindow()">
+        <img src="chatbot-removebg-preview.png" alt="Chatbot Icon"> <!-- Replace with your chat icon -->
+    </div>
+    <div id="chatWindow" class="chat-window" style="display: none;">
+        <div id="chatMessages" class="chat-messages"></div>
+        <input type="text" id="userInput" class="user-input" placeholder="Type your message..." onkeypress="handleUserInput(event)">
+        <button onclick="sendMessage()" class="send-button">Send</button>
+    </div>
+</div>
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-columns">
+            <div class="footer-column" id="footer-history">
+                <h4>Our History</h4>
+                <p>Founded in 2023, GymDog quickly established itself as a premier fitness destination, renowned for our cutting-edge facilities and a vibrant community committed to wellness and empowerment.</p>
+            </div>
+            <div class="footer-column">
+                <h4>About GymName</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#classes">Classes</a></li>
+                    <li><a href="#trainers">Trainers</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#membership">Membership</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <p>123 Fitness St., Wellness City</p>
+                <p>GymDog5@gmail.com</p>
+                <p>+234 811 789 4768</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 GymName. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="scripts.js"></script>
+    
+</body>
+</html>

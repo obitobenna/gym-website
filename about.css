@@ -1,0 +1,627 @@
+.about-banner {
+    background: url('gym_about_us_banner-transformed.jpeg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 150px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.about-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay to ensure text readability */
+    z-index: -1;
+}
+
+.about-banner .container {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    z-index: 2; /* Ensures text appears above the overlay */
+}
+
+.about-banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-banner p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .about-banner {
+        padding: 60px 20px;
+    }
+
+    .about-banner h1 {
+        font-size: 2rem;
+    }
+
+    .about-banner p {
+        font-size: 1rem;
+    }
+}
+.our-story {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+.our-story .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.our-story .story-content {
+    flex: 1;
+}
+
+.our-story .story-content h2 {
+    color: #C3073F;
+    margin-bottom: 20px;
+}
+
+.our-story .story-content p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.our-story .story-content .btn-story {
+    background-color: #C3073F;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.our-story .story-content .btn-story:hover {
+    background-color: #6F2232;
+}
+
+.our-story .story-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .our-story .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .our-story .story-content, .our-story .story-image {
+        width: 100%;
+    }
+
+    .our-story .story-image {
+        margin-top: 20px;
+    }
+}
+.mission-vision {
+    background-color: #eef4f7;
+    padding: 60px 0;
+    color: #333;
+}
+
+.mission-vision .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.mission-vision h2 {
+    color: #C3073F;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.mission-vision p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .mission-vision .container {
+        flex-direction: column;
+    }
+
+    .mission-vision h2 {
+        text-align: center;
+    }
+
+    .mission-vision p {
+        text-align: justify;
+    }
+}
+.meet-the-team {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.meet-the-team .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.meet-the-team h2 {
+    color: #C3073F;
+    margin-bottom: 40px;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.team-member {
+    flex-basis: calc(33.333% - 20px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.team-member h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    color: #C3073F;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.team-member .bio {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        flex-basis: 80%;
+    }
+}
+.member-testimonials {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.member-testimonials .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.member-testimonials h2 {
+    color: #C3073F;
+    margin-bottom: 40px;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.testimonial-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: calc(50% - 20px);
+    max-width: 500px;
+}
+
+.member-photos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.member-photos img {
+    width: calc(50% - 5px);
+    height: auto;
+    border-radius: 8px;
+}
+
+blockquote {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.member-name {
+    color: #333;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .testimonials {
+        flex-direction: column;
+    }
+
+    .testimonial-item {
+        width: 100%;
+    }
+}
+.community-involvement {
+    background-color: #eef4f7;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.community-involvement .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.community-involvement h2 {
+    color: #C3073F;
+    margin-bottom: 40px;
+}
+
+.events {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.event-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: calc(33.333% - 20px);
+    max-width: 350px;
+}
+
+.event-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.event-item h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.event-item p {
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .events {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event-item {
+        width: 100%;
+    }
+}
+.facilities-amenities {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.facilities-amenities .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.facilities-amenities h2 {
+    color: #C3073F;
+    margin-bottom: 40px;
+}
+
+.facility-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.facility-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: calc(33.333% - 20px);
+    max-width: 350px;
+}
+
+.facility-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.facility-item h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.facility-item p {
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .facility-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .facility-item {
+        width: 100%;
+    }
+}
+.unique-programs {
+    background-color: #eef4f7;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.unique-programs .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.unique-programs h2 {
+    color: #C3073F;
+    margin-bottom: 40px;
+}
+
+.programs-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.program-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: calc(33.333% - 20px);
+    max-width: 350px;
+}
+
+.program-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.program-item h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.program-item p {
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .programs-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .program-item {
+        width: 100%;
+    }
+} 
+.health-wellness-philosophy {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.health-wellness-philosophy .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.health-wellness-philosophy h2 {
+    color: #C3073F;
+    margin-bottom: 20px;
+}
+
+.health-wellness-philosophy p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.health-wellness-philosophy ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.health-wellness-philosophy li {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.health-wellness-philosophy li strong {
+    color: #C3073F;
+}
+
+@media (max-width: 768px) {
+    .health-wellness-philosophy ul {
+        text-align: center;
+    }
+
+    .health-wellness-philosophy li {
+        display: block;
+    }
+}
+.cta-section {
+    background-color: #C3073F;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.cta-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.cta-section h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.cta-section p {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.cta-buttons a {
+    display: inline-block;
+    background-color: #6F2232;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-buttons .btn-primary {
+    background-color: #f8f9fa;
+    color: #C3073F;
+}
+
+.cta-buttons a:hover {
+    background-color: #f8f9fa;
+    color: #C3073F;
+}
+
+@media (max-width: 768px) {
+    .cta-buttons a {
+        margin: 10px 0;
+        display: block;
+        width: 80%;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.blog-social-media {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.blog-social-media .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.blog-social-media h2 {
+    color: #C3073F;
+    margin-bottom: 20px;
+}
+
+.blog-social-media p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.social-links1 {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-link {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.social-link.blog {
+    background-color: #C3073F; /* Different color for the blog link */
+}
+
+.social-link:hover {
+    background-color: #C3073F;
+    color: #fff;
+}
+
+.social-link i {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .social-links {
+        flex-direction: column;
+    }
+}

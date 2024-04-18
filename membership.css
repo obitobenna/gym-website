@@ -1,0 +1,787 @@
+.membership-banner {
+    background: url('member\ banner.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 150px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.membership-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for text readability */
+    z-index: -1;
+}
+
+.membership-banner .container {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    z-index: 2; /* Ensures text is visible above the overlay */
+}
+
+.membership-banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.membership-banner p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .membership-banner {
+        padding: 60px 20px;
+    }
+
+    .membership-banner h1 {
+        font-size: 2rem;
+    }
+
+    .membership-banner p {
+        font-size: 1rem;
+    }
+}
+.membership-welcome {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%;
+    background-color: #f8f9fa;
+}
+
+.membership-welcome-content h1 {
+    font-size: 2.5rem;
+    color: #C3073F;
+    margin-bottom: 20px;
+}
+
+.membership-welcome-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666;
+    max-width: 600px;
+}
+
+.membership-welcome-content .btn-primary {
+    background-color: #C3073F;
+    color: #ffffff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.membership-welcome-content .btn-primary:hover {
+    background-color: #6F2232;
+}
+
+.membership-welcome-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .membership-welcome {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .membership-welcome-image img {
+        margin-top: 20px;
+    }
+}
+.customization-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.customization-title {
+    color: #C3073F;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.customization-option {
+    margin-bottom: 20px;
+}
+
+.customization-option label, .customized-plan p {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.custom-select, .btn-customize {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn-customize {
+    background-color: #C3073F;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.btn-customize:hover {
+    background-color: #6F2232;
+}
+
+.customized-plan {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    color: #333;
+}
+/* Base styles */
+.customization-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Other styles remain unchanged */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .customization-container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .customization-title {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .customization-option label, .customized-plan p {
+        font-size: 0.9rem; /* Adjust font size for readability */
+    }
+
+    .btn-customize {
+        padding: 12px; /* Adjust button padding for better touch targets */
+    }
+}
+
+@media (max-width: 480px) {
+    .customization-container {
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .customization-title {
+        font-size: 1.2rem; /* Further adjust font size for very small screens */
+    }
+
+    .customization-option label, .customized-plan p {
+        font-size: 0.8rem; /* Ensure text remains readable */
+    }
+
+    .custom-select, .btn-customize {
+        font-size: 0.9rem; /* Adjust form elements for smaller screens */
+    }
+}
+.vr-tour-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 450px; /* Initial height, adjust based on aspect ratio */
+    margin: 40px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.vr-tour {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.vr-tour-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #C3073F;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.vr-tour-button:hover {
+    background-color: #6F2232;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .vr-tour-container {
+        height: 300px; /* Adjust height for smaller devices */
+    }
+
+    .vr-tour-button {
+        font-size: 1rem; /* Adjust button size for smaller screens */
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .vr-tour-container {
+        height: 200px; /* Further adjust height for very small screens */
+    }
+
+    .vr-tour-button {
+        font-size: 0.9rem; /* Further adjust button size for very small screens */
+        padding: 6px 12px;
+    }
+}
+.member-achievements-section {
+    background-color: #f8f9fa;
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.section-title {
+    color: #C3073F;
+    margin-bottom: 30px;
+}
+
+.achievements-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.achievement {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    min-width: 250px;
+    max-width: 350px;
+}
+
+.achievement h3 {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.achievement p {
+    color: #666;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .achievement {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .achievement {
+        width: 100%;
+    }
+}
+.gamification-section {
+    padding: 40px 5%;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.section-title {
+    color: #C3073F;
+    margin-bottom: 30px;
+}
+
+.badges-container, .points-container, .leaderboard-container {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.badge, .leaderboard-entry {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+}
+
+.leaderboard-entry {
+    width: 100%;
+    text-align: left;
+}
+
+.leaderboard-entry span {
+    float: right;
+}
+.member-only-section {
+    background-color: #f8f9fa;
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.section-title {
+    color: #C3073F;
+    margin-bottom: 30px;
+}
+
+.content-teaser p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #C3073F;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #6F2232;
+}
+
+.member-content h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .member-only-section {
+        padding: 20px 3%;
+    }
+
+    .btn-primary {
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .member-only-section {
+        padding: 15px 2%;
+    }
+
+    .btn-primary {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+    }
+}
+.class-availability-section {
+    background-color: #f8f9fa;
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.section-title {
+    color: #C3073F;
+    margin-bottom: 30px;
+}
+
+.classes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.class-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: calc(50% - 20px);
+    min-width: 250px;
+    max-width: 350px;
+}
+
+.class-item h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.class-item p {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.availability {
+    font-weight: bold;
+    color: #C3073F;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .classes-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .class-item {
+        width: 100%;
+    }
+}
+.community-challenges-section {
+    background-color: #f8f9fa;
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.section-title {
+    color: #C3073F;
+    margin-bottom: 30px;
+}
+
+.challenges-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.challenge-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: calc(50% - 20px);
+    min-width: 250px;
+    max-width: 350px;
+}
+
+.challenge-item h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.challenge-item p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.btn-signup {
+    background-color:#C3073F;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-signup:hover {
+    background-color:#6F2232;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .challenges-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .challenge-item {
+        width: 100%;
+    }
+}
+.membership-perks-section {
+    background-color: #f8f9fa;
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.section-title {
+    color: #C3073F;
+    margin-bottom: 30px;
+}
+
+.perks-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.perk-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    min-width: 250px;
+    max-width: 350px;
+    text-align: left;
+}
+
+.perk-logo {
+    max-width: 100px;
+    height: auto;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.perk-item h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.perk-item p {
+    color: #666;
+}
+.perk-item img {
+    width: 100%; /* Makes the image responsive */
+    max-width: 200px; /* Limits the size to not become too large */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes bottom space/gap */
+    margin: 0 auto; /* Centers the image in the container */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .perk-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .perk-item {
+        width: 100%;
+    }
+}
+.feedback-section {
+    background-color: #f8f9fa;
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.section-title {
+    color: #C3073F;
+    margin-bottom: 20px;
+}
+
+.feedback-section p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.feedback-form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn-submit {
+    background-color: #C3073F;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background-color: #6F2232;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .feedback-form {
+        width: 90%;
+    }
+}
+.live-feed-section {
+    background-color: #f8f9fa;
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.section-title {
+    color: #C3073F;
+    margin-bottom: 30px;
+}
+
+.social-wall {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-post {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    min-width: 250px;
+    max-width: 350px;
+    text-align: left;
+}
+
+.social-post img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.placeholder-text {
+    color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .social-post {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .social-post {
+        width: 100%;
+    }
+}
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.chatbot-icon, .chatbot-icon img {
+    width: 60px; /* Adjust as needed */
+    height: 60px; /* Adjust as needed */
+    display: block;
+    cursor: pointer;
+   
+}
+
+.chat-window {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    width: 300px; /* Default width */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    max-height: 400px; /* Adjust based on your preference */
+}
+
+.chat-messages {
+    padding: 10px;
+    overflow-y: auto;
+    flex-grow: 1;
+    background: #f0f0f0;
+}
+
+.user-input, .send-button {
+    border: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.user-input {
+    flex-grow: 1;
+    border-top: 1px solid #ddd;
+}
+
+.send-button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .chat-window {
+        width: 80%; /* Increase width on smaller devices */
+        bottom: 60px; /* Adjust position */
+        right: 10%; /* Center the chat window */
+    }
+
+    .chatbot-icon {
+        width: 50px; /* Slightly reduce size on smaller devices */
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chat-window {
+        width: 95%; /* Further increase width on very small devices */
+        bottom: 50px; /* Adjust position */
+        right: 2.5%; /* Center the chat window */
+    }
+
+    .chatbot-icon {
+        width: 40px; /* Further reduce size on very small devices */
+        height: 40px;
+    }
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="classes.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body >
+    <header class="header">
+        <a href="#" class="logo">Gym Dog</a>
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="burger">
+            <i class="fas fa-bars"></i> <!-- Updated to use Font Awesome icon -->
+        </div>
+    </header>
+    
+    <div class="classes-banner">
+        <div class="banner-content">
+            <h1>Elevate Your Fitness Journey</h1>
+            <p>Discover Classes That Inspire and Challenge You</p>
+            <a href="#classes-list" class="btn btn-primary">Explore Our Classes</a>
+        </div>
+    </div>
+    <!-- Make sure to have an element with the ID that matches the href of the CTA for smooth scrolling -->
+    <div id="classes-list" class="classes-container1">
+        <h2>Our Featured Classes</h2>
+        <div class="class-item">
+            <img src="yoga training.jpg" alt="Yoga Class">
+            <h3>Yoga</h3>
+            <p>Find your inner peace and improve flexibility with our Yoga classes, suitable for all levels.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="class-item">
+            <img src="high intensity training.jpg" alt="HIIT Class">
+            <h3>High-Intensity Interval Training (HIIT)</h3>
+            <p>Boost your metabolism and burn more fat with short bursts of intense exercise.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="class-item">
+            <img src="boxing.jpg" alt="Boxing Class">
+            <h3>Boxing</h3>
+            <p>Empower yourself with boxing techniques that improve strength, agility, and cardiovascular health.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="class-item">
+            <img src="pilates training.jpg" alt="Pilates Class">
+            <h3>Pilates</h3>
+            <p>Strengthen your core and improve postural alignment with our Pilates sessions.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <!-- Add more classes as needed -->
+    </div>
+    <section class="trainers-section">
+        <div class="container">
+            <h2>Meet Our Expert Trainers</h2>
+            <div class="trainers-grid">
+                <!-- Trainer Profile 1 -->
+                <div class="trainer-card">
+                    <img src="gym instructor 1.jpg" alt="Trainer Name 1">
+                    <div class="trainer-info">
+                        <h3>Obi Tobenna</h3>
+                        <p>Specialty: Weightlifting</p>
+                        <a href="#" class="btn">View Profile</a>
+                    </div>
+                </div>
+                <!-- Additional trainer profiles -->
+                <div class="trainer-card">
+                    <img src="gym instructor 4.jpg" alt="Trainer Name 2">
+                    <div class="trainer-info">
+                        <h3>Alexa Bliss</h3>
+                        <p>Specialty: Yoga & Mindfulness</p>
+                        <a href="#" class="btn">View Profile</a>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <img src="gym instructor 3.jpg" alt="Trainer Name 3">
+                    <div class="trainer-info">
+                        <h3>Michelle Cole</h3>
+                        <p>Specialty: Cardio Boxing</p>
+                        <a href="#" class="btn">View Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="class-schedule">
+        <h3>Weekly Schedule</h3>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Class</th>
+                <th>Instructor</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>7:00 AM</td>
+                <td>Yoga</td>
+                <td>Jane Doe</td>
+            </tr>
+            <tr>
+                <td>Tuessday</td>
+                <td>5:30 PM</td>
+                <td>HIIT</td>
+                <td>John Smith</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>6:00 AM</td>
+                <td>Pilates</td>
+                <td>Emily White</td>
+            </tr>
+            <tr>
+                <td>thursday</td>
+                <td>6:00 PM</td>
+                <td>Boxing</td>
+                <td>Mike Tyson</td>
+            </tr>
+            <tr>
+                <td>friday</td>
+                <td>7:00 AM</td>
+                <td>Spin Class</td>
+                <td>Chris Froome</td>
+            </tr>
+            <!-- Continue for the rest of the week -->
+        </table>
+    </div>
+    <div class="cta">
+        <a href="signup.html" class="btn btn-primary">Join a Class Today!</a>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column" id="footer-history">
+                    <h4>Our History</h4>
+                    <p>Founded in 2023, GymDog quickly established itself as a premier fitness destination, renowned for our cutting-edge facilities and a vibrant community committed to wellness and empowerment.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>About GymName</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#classes">Classes</a></li>
+                        <li><a href="#trainers">Trainers</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#membership">Membership</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <p>123 Fitness St., Wellness City</p>
+                    <p>GymDog5@gmail.com</p>
+                    <p>+234 811 789 4768</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 GymName. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

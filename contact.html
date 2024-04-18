@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header"> 
+        <a href="#" class="logo">Gym Dog</a>
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="burger">
+            <i class="fas fa-bars"></i> <!-- Updated to use Font Awesome icon -->
+        </div>
+    </header>
+    <section class="contact-banner">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We're here to help you on your fitness journey. Reach out with any questions.</p>
+        </div>
+    </section>
+    <section class="contact-intro">
+        <div class="container">
+            <h2>Welcome to Our Contact Page</h2>
+            <p>Your journey towards a healthier lifestyle is important to us. Whether you have questions, feedback, or just want to say hello, we're here to listen and help. Reach out to us through any method below, and let's make fitness a part of your life together.</p>
+        </div>
+    </section>
+    <section class="contact-options">
+        <div class="container">
+            <h2>How to Reach Us</h2>
+            <div class="options">
+                <div class="option-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>GymDog5@gmail.com</p>
+                </div>
+                <div class="option-item">
+                    <i class="fas fa-phone"></i>
+                    <h3>Call Us</h3>
+                    <p>+234 811 789 4768</p>
+                </div>
+                <div class="option-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Visit Us</h3>
+                    <p>123 Fitness St., Wellness City</p>
+                </div>
+                <div class="option-item chat">
+                    <i class="fas fa-comments"></i>
+                    <h3>Live Chat</h3>
+                    <p>Chat with us live for immediate assistance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-form-section">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <form id="contact-form" action="your-server-endpoint" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" id="message" placeholder="Your Message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <section class="map-directions">
+        <div class="container">
+            <h2>Find Us</h2>
+            <p>Visit us at our conveniently located gym and start your fitness journey today!</p>
+            
+            <!-- Google Map Embed -->
+            <div class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12581.332299999998!2d-0.127!3d51.5074!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDMwJzI3LjAiTiAwwrAwNyc0My4wIlc!5e0!3m2!1sen!2sus!4v1631024745096!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            
+            <!-- Written Directions -->
+            <div class="directions">
+                <h3>Directions</h3>
+                <p>From <strong>Major Landmark</strong> or <strong>Highway</strong>:</p>
+                <ol>
+                    <li>Start off heading north on Main Street toward Central Ave.</li>
+                    <li>Take the second left onto Elm Street.</li>
+                    <li>Continue for half a mile, and you'll see our gym on the right.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <section class="social-media">
+        <div class="container">
+            <h2>Stay Connected</h2>
+            <p>Follow us on social media for the latest updates, tips, and community stories.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/yourgym" class="icon facebook" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/yourgym" class="icon twitter" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/yourgym" class="icon instagram" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/yourgym" class="icon youtube" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <!-- Additional social media links as needed -->
+            </div>
+        </div>
+    </section>
+    <section class="response-time">
+        <div class="container">
+            <h2>Our Commitment to You</h2>
+            <p>We understand that your time is valuable. That's why we're committed to responding to all inquiries within <strong>24 hours</strong> during business days. For inquiries received during the weekend, we'll get back to you by the end of the next business day.</p>
+        </div>
+    </section>
+    <section class="meet-the-team">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="gym instructor 1.jpg" alt="Alex Thompson - Founder">
+                    <h3>Alex Thompson</h3>
+                    <p>Founder & Personal Trainer</p>
+                    <div class="bio">Alex is passionate about helping others achieve their fitness goals. With over 10 years of experience, he specializes in weightlifting and nutrition.</div>
+                </div>
+                
+                <div class="team-member">
+                    <img src="gym instructor 4.jpg" alt="Jamie Lee - Yoga Instructor">
+                    <h3>Jamie Lee</h3>
+                    <p>Yoga Instructor</p>
+                    <div class="bio">Jamie brings a holistic approach to fitness, focusing on the mind-body connection through yoga and meditation.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Transform Your Life?</h2>
+            <p>Join us today and start your journey to a healthier, happier you. Sign up for a free trial, book a tour, or join a class. Let's achieve your fitness goals together.</p>
+            <div class="cta-buttons">
+                <a href="signup.html" class="btn btn-primary">Sign Up for a Free Trial</a>
+                <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column" id="footer-history">
+                    <h4>Our History</h4>
+                    <p>Founded in 2023, GymDog quickly established itself as a premier fitness destination, renowned for our cutting-edge facilities and a vibrant community committed to wellness and empowerment.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>About GymName</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#classes">Classes</a></li>
+                        <li><a href="#trainers">Trainers</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#membership">Membership</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <p>123 Fitness St., Wellness City</p>
+                    <p>GymDog5@gmail.com</p>
+                    <p>+234 811 789 4768</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 GymName. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts.js"></script> 
+</body>
+</html>
+</body>
+</html>
