@@ -180,6 +180,7 @@
 .btn:hover {
     background-color: #6F2232;
 }
+
 .class-schedule {
     max-width: 800px;
     margin: 40px auto;
@@ -221,26 +222,27 @@
     background-color: #ddd;
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
-    .class-schedule table, .class-schedule th, .class-schedule td {
-        display: block;
+    .class-schedule table {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
     }
 
     .class-schedule th, .class-schedule td {
-        text-align: center;
-    }
-
-    .class-schedule td {
-        padding: 10px 0;
-    }
-
-    .class-schedule td:before {
-        content: attr(data-label);
-        float: left;
-        font-weight: bold;
-        color: #C3073F;
+        padding: 10px; /* Increase padding for better touch targets */
     }
 }
+
+@media (max-width: 480px) {
+    .class-schedule table {
+        font-size: 0.8rem; /* Further adjust font size for very small screens */
+    }
+
+    .class-schedule th, .class-schedule td {
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+}
+
 .cta {
     text-align: center;
     margin: 40px 0;
