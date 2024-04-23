@@ -69,7 +69,7 @@ body {
         position: fixed;
         top:8px;
         right: 0px;
-        background: rgba(212, 195, 195, 0.5);
+        background: rgba(100, 99, 99, 0.5);
         height: calc(100vh - 100px);
         width:50%;
         flex-direction: column;
